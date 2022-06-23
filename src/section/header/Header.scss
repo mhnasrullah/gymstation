@@ -1,0 +1,63 @@
+@import "../../var.scss";
+
+#header{
+    height: 600px;
+    background-color: $smblack;
+    padding: 200px 0;
+    h1{
+        font-size: 42px;
+        font-weight: $xbold;
+    }
+    p{
+        color: $grey;
+    }
+    .img-header{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $smblack;
+            opacity: 70%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #header{
+        .img-header{
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #header{
+        height: 700%;
+        h1{
+            width: 80%;
+            font-size: 64px;
+        }
+        p{
+            width: 60%;
+        }
+        .img-header{
+            width: 50%;
+        }
+    }
+}
