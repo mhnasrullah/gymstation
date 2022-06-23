@@ -1,0 +1,23 @@
+@import "../../var.scss";
+
+#testimoni{
+    padding: 120px 0;
+    .custom-swiper{
+        height: 680px;
+        .swiper-pagination-bullet{
+            background: $grey;
+        }
+        .swiper-pagination-bullet-active{
+            background: $yellow;
+            transform: scale(1.8);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #testimoni{
+        .custom-swiper{
+            height: 450px;
+        }
+    }
+}
