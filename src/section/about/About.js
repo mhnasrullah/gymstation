@@ -5,6 +5,7 @@ import Benefit from './Benefit'
 import Extrainer from "../../asset/benefit/extrainer.png"
 import Comeq from "../../asset/benefit/comeq.png"
 import Fullsup from "../../asset/benefit/fullsup.png"
+import Heading from '../../comp/Heading'
 
 export default function About() {
   return (
@@ -12,11 +13,11 @@ export default function About() {
         <Container>
             <Row className="justify-content-center">
                 <Col className="text-center" md={8} lg={5}>
-                    <h2 className='mb-4'>How About Us?</h2>
+                    <Heading>How About Us?</Heading>
                     <p>We are the party that provides special training to get the ideal shape and help you in taking care of your body to be better. We have prepared trainers, places and tools for you to the fullest</p>
                 </Col>
             </Row>
-            <Row className="mt-5">
+            <Row className="mt-3">
                 <Col xs={12} md={4}>
                     <Benefit
                     img={Extrainer}

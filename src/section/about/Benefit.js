@@ -1,4 +1,5 @@
 import React from 'react'
+import Title from '../../comp/Title'
 import "./Benefit.scss"
 
 export default function Benefit(props) {
@@ -7,7 +8,7 @@ export default function Benefit(props) {
         <div className='img-benefit'>
             <img src={props.img}/>
         </div>
-        <h6 className='mt-3 mx-lg-3'>{props.title}</h6>
+        <Title className="mt-3 mx-lg-3">{props.title}</Title>
         <p className='mx-auto mx-lg-3'>{props.text}</p>
     </div>
   )

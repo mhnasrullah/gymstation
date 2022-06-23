@@ -1,0 +1,72 @@
+@import "../../var.scss";
+
+.card-trainer{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    &:hover{
+        &::before{
+            border: 4px solid $yellow;
+        }
+        & .box-trainer .info-trainer{
+            bottom: -50%;
+        }
+    }
+    &::before{
+        transition: all .3s;
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        top: -10px;
+        left: 10%;
+        right: 10%;
+        border: 4px solid $smblack;
+        z-index: 0;
+    }
+    .box-trainer{
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        .img-trainer{
+            height: 100%;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: $smblack;
+                top:0;
+                left:0;
+                opacity: 70%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .info-trainer{
+            transition: all .3s;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+            bottom: 0;
+            p{
+                color: $grey;
+            }
+            &::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 0;
+                background: linear-gradient(rgba($black,0),$black 80%);
+            }
+        }
+    }
+}

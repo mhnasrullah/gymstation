@@ -1,19 +1,6 @@
 @import "../../var.scss";
 
 #about{
-    padding: 120px 0;
+    padding-top: 120px;
     position: relative;
-    box-shadow: -4px 0 20px rgba($color: #000000, $alpha: .8);
-    h2{
-        font-size: 32px;
-        font-weight: $xbold;
-    }
-}
-
-@media (min-width: 992px) {
-    #about{
-        h2{
-            font-size: 36px;
-        }    
-    }
 }

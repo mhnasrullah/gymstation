@@ -1,0 +1,12 @@
+@import "../var.scss";
+
+.h2heading{
+    font-size: 32px;
+    font-weight: $xbold;
+}
+
+@media (min-width: 992px) {
+    .h2heading{
+        font-size: 36px;
+    }    
+}

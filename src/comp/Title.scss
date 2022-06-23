@@ -1,0 +1,12 @@
+@import "../var.scss";
+
+.titleh6{
+    font-size: 20px;
+    font-weight: $smbold;
+}
+@media (min-width: 992px) {
+    
+    .titleh6{
+        font-size: 24px;
+    }
+}
