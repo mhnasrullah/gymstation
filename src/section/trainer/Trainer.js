@@ -8,9 +8,9 @@ import Nike from "../../asset/trainer/Nike.png"
 import Bobby from "../../asset/trainer/Bobby.png"
 import Jenny from "../../asset/trainer/Jenny.png"
 
-export default function Trainer() {
+export default function Trainer(props) {
   return (
-    <section id="trainer">
+    <section id="trainer" ref={props.refto}>
         <Container>
             <Row>
                 <Col>
@@ -20,24 +20,28 @@ export default function Trainer() {
             <Row className="justify-content-center">
                 <Col xs={10} md={5} lg={3} className="mb-5 mb-lg-0">
                     <CardTrainer
+                    delay="0"
                     img={Jhon}
                     name="Jhon Remy"
                     motivation="A great mind is in a strong soul"/>
                 </Col>
                 <Col xs={10} md={5} lg={3} className="mb-5 mb-lg-0">
                     <CardTrainer
+                    delay="100"
                     img={Nike}
                     name="Jhon Remy"
                     motivation="Great people are stronger people"/>
                 </Col>
                 <Col xs={10} md={5} lg={3} className="mb-5 mb-lg-0">
                     <CardTrainer
+                    delay="200"
                     img={Bobby}
                     name="Bobby Marlino"
                     motivation="live better with a strong soul"/>
                 </Col>
                 <Col xs={10} md={5} lg={3} className="mb-5 mb-lg-0">
                     <CardTrainer
+                    delay="300"
                     img={Jenny}
                     name="Jenny Roselia"
                     motivation="body shape is form of self-confidence"/>

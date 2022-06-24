@@ -1,0 +1,32 @@
+@import "../../var.scss";
+
+footer{
+    background-color: $smblack;
+    padding: 120px 0 50px;
+    img{
+        width: 50%;
+    }
+    .newsletter{
+        &.newsletter-focus{
+            box-shadow: 0 0 0 0.25rem rgba($color: $yellow, $alpha: .5);
+        }
+        .form-input{
+            border-radius: 0;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+    .social-media{
+        a{
+            height: 20px;
+        }
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .rights{
+        color: $grey;
+    }
+}

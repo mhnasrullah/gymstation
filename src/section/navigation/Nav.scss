@@ -1,0 +1,99 @@
+@import "../../var.scss";
+
+navbar{
+    &.bg-nav{
+        background-color: $smblack;
+    }
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 24px 0;
+    // background-color: $smblack;
+    .nav-left{
+        .logo-nav{
+            width: 140px;
+        }
+        .toggle{
+            width: 40px;
+            gap: 4px;
+            border: none;
+            background-color: transparent;
+            span{
+                height: 3px;
+                background-color: $white;
+            }
+            .toggle-1{
+                width: 80%;
+            }
+            .toggle-2{
+                width: 100%;
+            }
+            .toggle-3{
+                width: 60%;
+            }
+        }
+    }
+    .side-nav{
+        position: fixed;
+        transition: ease-out .3s;
+        &.side-nav__non-ative{
+            right: -100%;
+        }
+        // padding-top: 24px;
+        .toggle{
+            width: 30px;
+            height: 30px;
+            gap: 4px;
+            border: none;
+            background-color: transparent;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                height: 3px;
+                background-color: $white;
+                position: absolute;
+            }
+            .toggle-1{
+                width: 100%;
+                transform: rotate(45deg);
+            }
+            .toggle-2{
+                transform: rotate(-45deg);
+                width: 100%;
+            }
+        }
+        padding-top: 24px;
+        top: 0;
+        right: 0;
+        width: 80%;
+        bottom: 0;
+        background-color: $black;
+    }
+}
+
+@media (min-width: 992px) {
+    navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        padding: 24px 0;
+        .nav-left{
+            width: auto;
+            .logo-nav{
+                width: 170px;
+            }
+        }
+        .side-nav{
+            // width: 80%;
+            position: static;
+            &.side-nav__non-ative{
+                right: 0px;
+            }
+            padding-top: 0px;
+            padding-right: 0;
+            background-color: transparent;
+        }
+    }
+}

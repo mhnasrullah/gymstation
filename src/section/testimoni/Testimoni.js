@@ -11,9 +11,9 @@ import 'swiper/css/pagination'
 import "swiper/css/mousewheel"
 import "./Testimoni.scss"
 
-export default function Testimoni() {
+export default function Testimoni(props) {
   return (
-    <section id='testimoni'>
+    <section id='testimoni' ref={props.refto}>
         <Container>
             <Row>
                 <Col>
@@ -32,7 +32,6 @@ export default function Testimoni() {
                     <SwiperSlide className='d-flex justify-content-center'>
                         <Col xs={10} lg={6}>
                             <CardTestimoni
-                            
                             img={Christensen}
                             name="Christensen"
                             job="Junior Basketball Player">Intense exercise with the Gym Station can improve my balance when playing basketball. I can also be more professional as a basketball player
