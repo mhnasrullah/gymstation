@@ -22,7 +22,7 @@ export default function Header() {
                         />
                     </h1>
                     <p className='mt-3 mb-5'>Get the ideal shape and full health in your body with us and live a better life</p>
-                    <Button >Join with us</Button>
+                    <Button To="/member">Join with us</Button>
                 </Col>
             </Row>
         </Container>

@@ -3,9 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
 } from "react-router-dom";
 import Header from "./section/header/Header";
 import "./var.scss"
@@ -50,7 +47,6 @@ function App() {
         {offset > 100 ? <Nav setTo={handleTo} bg/> : <Nav setTo={handleTo}/>}
 
           <Routes>
-
             <Route
             exact path='/'
             element={
@@ -65,7 +61,7 @@ function App() {
               />
 
             <Route
-            path='/member'
+            path='member'
             element={
               <Member/>
             }/>

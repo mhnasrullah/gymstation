@@ -4,6 +4,9 @@ navbar{
     &.bg-nav{
         background-color: $smblack;
     }
+    a:hover{
+        color: $yellow;
+    }
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -28,15 +31,13 @@ navbar{
             .toggle-2{
                 width: 100%;
             }
+            
             .toggle-3{
                 width: 60%;
             }
         }
     }
     .side-nav{
-        a:hover{
-            color: $yellow;
-        }
         position: fixed;
         transition: ease-out .3s;
         &.side-nav__non-ative{
