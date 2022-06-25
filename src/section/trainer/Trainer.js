@@ -10,6 +10,7 @@ import Jenny from "../../asset/trainer/Jenny.png"
 
 export default function Trainer(props) {
   return (
+    <>
     <section id="trainer" ref={props.refto}>
         <Container>
             <Row>
@@ -49,5 +50,6 @@ export default function Trainer(props) {
             </Row>
         </Container>
     </section>
+    </>
   )
 }

@@ -13,6 +13,7 @@ import "./Testimoni.scss"
 
 export default function Testimoni(props) {
   return (
+    <>
     <section id='testimoni' ref={props.refto}>
         <Container>
             <Row>
@@ -51,5 +52,6 @@ export default function Testimoni(props) {
             </Row>
         </Container>
     </section>
+    </>
   )
 }

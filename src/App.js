@@ -1,4 +1,12 @@
 import React, { useEffect, useState,useRef } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 import Header from "./section/header/Header";
 import "./var.scss"
 import "./app.scss"
@@ -7,6 +15,7 @@ import Trainer from "./section/trainer/Trainer";
 import Testimoni from "./section/testimoni/Testimoni";
 import Footer from "./section/footer/Footer";
 import Nav from "./section/navigation/Nav";
+import Member from './section/member/Member';
 
 function App() {
   const [offset, setOffset] = useState(0);
@@ -37,14 +46,35 @@ function App() {
 
   return (
     <div className="App">
-      {offset > 100 ? <Nav setTo={handleTo} bg/> : <Nav setTo={handleTo}/>}
-      <Header/>
-      <section id="body">
-        <About refto={aboutRef} />
-        <Trainer refto={trainerRef} />
-        <Testimoni refto={testiRef} />
-      </section>
-      <Footer/>
+      <Router>
+        {offset > 100 ? <Nav setTo={handleTo} bg/> : <Nav setTo={handleTo}/>}
+
+          <Routes>
+
+            <Route
+            exact path='/'
+            element={
+              <>
+                <Header/>
+                <section id="body">
+                  <About refto={aboutRef} />
+                  <Trainer refto={trainerRef} />
+                  <Testimoni refto={testiRef} />
+                </section>
+                </>} 
+              />
+
+            <Route
+            path='/member'
+            element={
+              <Member/>
+            }/>
+              
+
+          </Routes>
+
+        <Footer/>
+      </Router>
     </div>
   );
 }

@@ -9,6 +9,7 @@ import Heading from '../../comp/Heading'
 
 export default function About(props) {
   return (
+    <>
     <section id='about' ref={props.refto}>
         <Container>
             <Row className="justify-content-center">
@@ -42,5 +43,6 @@ export default function About(props) {
             </Row>
         </Container>
     </section>
+    </>
   )
 }
