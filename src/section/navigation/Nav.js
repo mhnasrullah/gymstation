@@ -13,6 +13,7 @@ export default function Nav(props) {
     const [nav,setNav] = useState("side-nav__non-ative");
     // const aboutRef = useRef(abo)
   return (
+    <div>
     <navbar className={props.bg==true || nav!="side-nav__non-ative" ? "bg-nav" :""}>
         <Container>
             <Row>
@@ -67,7 +68,7 @@ export default function Nav(props) {
                                         props.setTo("testi")}
                                     }>Testimoni</a>
                                 </nav>
-                                <Button className="ms-lg-auto" To="/member">Membership</Button>
+                                <Button className="ms-lg-auto" To="member">Membership</Button>
                             </div>
                             </>
                         }/>
@@ -76,5 +77,6 @@ export default function Nav(props) {
             </Row>
         </Container>
     </navbar>
+    </div>
   )
 }
