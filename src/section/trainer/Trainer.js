@@ -30,7 +30,7 @@ export default function Trainer(props) {
                     <CardTrainer
                     delay="100"
                     img={Nike}
-                    name="Jhon Remy"
+                    name="Lili Sherly"
                     motivation="Great people are stronger people"/>
                 </Col>
                 <Col xs={10} md={5} lg={3} className="mb-5 mb-lg-0">
